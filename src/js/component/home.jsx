@@ -39,9 +39,15 @@ const Home = () => {
 						)
 					})}
 				</ul>
+				<div className="d-flex justify-content-between">
 				<span>
 					{listaDeTareas.length} items left
 				</span>
+				<br />
+				<span>
+					{(listaDeTareas.length == 0)?"No hay tareas, añadir tareas" : ""}
+				</span>
+				</div>
 			</div>
 		</div>
 	);
