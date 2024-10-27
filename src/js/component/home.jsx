@@ -11,8 +11,8 @@ const Home = () => {
 
 
 	return (
-		<div className="container mt-5">
-			<h1 className="text-center mt-5">Todo List!</h1>
+		<div className="container mt-5 bg-primary bg-gradient">
+			<h1 className="text-center mt-5 text-light">To do List!</h1>
 			<div className="">
 				<input type="text" className="form-control" placeholder="¿Que necesitas hacer?" value={nuevaTarea} onChange={(evento) => {
 						setNuevaTarea(evento.target.value)
@@ -24,7 +24,7 @@ const Home = () => {
 						}
 					}}
 					/>
-				<ul className="card">
+				<ul className="card text-light bg-dark bg-gradient">
 
 					{listaDeTareas.map((item,index) => {
 						return (
@@ -39,7 +39,7 @@ const Home = () => {
 						)
 					})}
 				</ul>
-				<div className="d-flex justify-content-between">
+				<div className="d-flex justify-content-between text-light">
 				<span>
 					{listaDeTareas.length} items left
 				</span>
